@@ -31,7 +31,7 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="projects-section">
-      <h2>My Projects</h2>
+      <h2 className="projects-heading">My Projects</h2>
       {projects.map((project, i) => (
         <div key={i} className="project-card">
           <h3>{project.title}</h3>
