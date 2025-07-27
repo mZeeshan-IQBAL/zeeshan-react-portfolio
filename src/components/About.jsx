@@ -68,7 +68,9 @@ export default function About() {
           </div>
 
           <div className="skills-paragraph">
-            <h3>Skills</h3>
+            <h3>
+              <FaLaptopCode className="icon" /> Skills
+            </h3>
             <ul className="skills-list">
               <li>React.js (Class & Functional Components)</li>
               <li>JavaScript (ES6+)</li>
@@ -95,29 +97,29 @@ export default function About() {
           ))}
         </div>
       </section>
-<section className="facts-section">
-      <div className="quick-facts">
-        <h2>Quick Facts</h2>
-        <div className="facts-container">
-          <div className="fact-item">
-            <span className="fact-number">50+</span>
-            <span className="fact-label">Projects</span>
-          </div>
-          <div className="fact-item">
-            <span className="fact-number">5+</span>
-            <span className="fact-label">Years</span>
-          </div>
-          <div className="fact-item">
-            <span className="fact-number">30+</span>
-            <span className="fact-label">Clients</span>
-          </div>
-          <div className="fact-item">
-            <span className="fact-number">100%</span>
-            <span className="fact-label">Satisfaction</span>
+      <section className="facts-section">
+        <div className="quick-facts">
+          <h2>Quick Facts</h2>
+          <div className="facts-container">
+            <div className="fact-item">
+              <span className="fact-number">20+</span>
+              <span className="fact-label">Projects</span>
+            </div>
+            <div className="fact-item">
+              <span className="fact-number">2+</span>
+              <span className="fact-label">Years</span>
+            </div>
+            <div className="fact-item">
+              <span className="fact-number">15+</span>
+              <span className="fact-label">Clients</span>
+            </div>
+            <div className="fact-item">
+              <span className="fact-number">100%</span>
+              <span className="fact-label">Satisfaction</span>
+            </div>
           </div>
         </div>
-      </div>
       </section>
-      </>
+    </>
   );
 }

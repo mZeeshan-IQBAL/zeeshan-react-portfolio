@@ -1514,7 +1514,9 @@ body {
  border: 3px solid #1f62c0ff;
   color: rgba(240, 246, 252, 0.9);
 }
-
+.dark .service-title {
+  color: #f0f6fc;
+}
 .dark .service-description {
   color: rgba(240, 246, 252, 0.8);
 }
