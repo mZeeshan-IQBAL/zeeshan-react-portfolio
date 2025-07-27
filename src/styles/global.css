@@ -628,7 +628,7 @@ body {
 /* 5. Dark mode for About Section */
 .dark .about-section {
   background: #161b22;
-  border: 1px solid #0fbef3ff;
+  border: 2px solid #1f62c0ff;
   color: #f0f6fc;
 }
 
@@ -638,7 +638,7 @@ body {
 
 .dark .about-paragraph {
   background: #0d1117;
-  border: 2px solid #1f62c0ff;
+  border: 3px solid #1f62c0ff;
   color: #f0f6fc;
 }
 
@@ -721,6 +721,9 @@ body {
 }
 
 /* Dark mode for Skills section */
+.dark .skills-paragraph {
+	border: 3px solid #1f62c0ff;
+}
 .dark .skills-list li {
   color: #8b949e;
   border-bottom: 1px solid #21262d;
@@ -905,7 +908,7 @@ body {
 /* Dark mode for What I Love section */
 .dark .love-item-card {
   background: #0d1117;
-  border: 2px solid #1f62c0ff;
+  border: 3px solid #1f62c0ff;
   color: #f0f6fc;
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
 }
@@ -1004,7 +1007,7 @@ body {
 /* 7.Dark Mode for Quick Facts */
 .dark .quick-facts {
   background: #0d1117;
-  border: 2px solid #1f62c0ff;
+  border: 3px solid #1f62c0ff;
   color: #f0f6fc;
 }
 
@@ -1163,7 +1166,7 @@ body {
 .dark .project-card {
   background: #161b22;
   color: #f0f6fc;
-  border: 1px solid #0269f9ff;
+  border: 3px solid #1f62c0ff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -1208,7 +1211,7 @@ body {
 .experience-heading {
   font-size: 2rem;
   text-align: center;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron"; sans-serif;
   margin-bottom: 2.5rem;
   font-weight: bold;
   color: #2920d6ff;
@@ -1276,11 +1279,11 @@ body {
 .experience-item::after {
   content: "";
   position: absolute;
-  left: -25px;
+  left: -24px;
   top: 50%;
   width: 25px;
   height: 2px;
-  background: #5b86e5;
+  background: #111;
 }
 
 .experience-item:hover {
@@ -1310,6 +1313,7 @@ body {
 /* 6. Dark mode overrides (same order as light mode) */
 .dark .experience-item {
   background-color: #0d1117;
+	border: 3px solid #1f62c0ff;
   border-left: 4px solid transparent;
 }
 
@@ -1352,7 +1356,7 @@ body {
   }
 
   .experience-item::before {
-    left: -28px;
+    left: -49.3px;
     width: 10px;
     height: 10px;
     top: 18px;
@@ -1360,6 +1364,7 @@ body {
 
   .experience-item::after {
     width: 20px;
+    
   }
 
   .experience-title {
@@ -1480,7 +1485,7 @@ body {
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 0.75rem;
-  color: #333;
+  color: #666;
 }
 
 /* Technologies Used */
@@ -1505,8 +1510,8 @@ body {
 
 /* Dark Mode Support */
 .dark .service-item {
-  background: rgba(48, 56, 68, 0.8);
-  border: 2px solid rgba(5, 81, 187, 0.8);
+  background: #0d1117;
+ border: 3px solid #1f62c0ff;
   color: rgba(240, 246, 252, 0.9);
 }
 
