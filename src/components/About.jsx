@@ -51,7 +51,7 @@ export default function About() {
 
         <div className="about-content">
           <div className="my-story">
-            <h3>
+            <h3 className="about-title">
               <FaUser className="icon" /> My Story
             </h3>
             <p>
@@ -67,7 +67,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="about-paragraph">
+          <div className="skills-paragraph">
             <h3>Skills</h3>
             <ul className="skills-list">
               <li>React.js (Class & Functional Components)</li>
