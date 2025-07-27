@@ -1,8 +1,8 @@
 import React from "react";
 import profileImage from "./profileImage.png";
-import { 
-  FaGithub, 
-  FaLinkedin, 
+import {
+  FaGithub,
+  FaLinkedin,
   FaInstagram,
   FaHome,
   FaUser,
@@ -11,7 +11,7 @@ import {
   FaCog,
   FaEnvelope,
   FaMoon,
-  FaSun
+  FaSun,
 } from "react-icons/fa";
 export default function Navbar({ darkMode, setDarkMode }) {
   const toggleDarkMode = () => {
@@ -23,7 +23,11 @@ export default function Navbar({ darkMode, setDarkMode }) {
       {/* Profile Section */}
       <div className="profile-section">
         <div className="profile-image-container">
-          <img src={profileImage} alt="Zeeshan Iqbal" className="profile-image" />
+          <img
+            src={profileImage}
+            alt="Zeeshan Iqbal"
+            className="profile-image"
+          />
         </div>
         <h2 className="profile-name">Muhammad Zeeshan Iqbal</h2>
         <p className="profile-subtitle">(Web Developer)</p>
@@ -75,13 +79,28 @@ export default function Navbar({ darkMode, setDarkMode }) {
       <div className="sidebar-bottom">
         {/* Social Media Icons */}
         <div className="social-icons">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a
+            href="https://github.com/mZeeshan-IQBAL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a
+            href="https://www.linkedin.com/in/muhammad-zeeshan-iqbal-0a7744349"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
             <FaLinkedin />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <a
+            href="https://www.instagram.com/itx_z33shan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
             <FaInstagram />
           </a>
         </div>
@@ -89,7 +108,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         {/* Dark Mode Toggle */}
         <button onClick={toggleDarkMode} className="dark-mode-toggle">
           {darkMode ? <FaSun /> : <FaMoon />}
-          <span>{darkMode ? 'Light Mode' : 'Dark Mode'}</span>
+          <span>{darkMode ? "Light Mode" : "Dark Mode"}</span>
         </button>
       </div>
     </div>
