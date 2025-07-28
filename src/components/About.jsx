@@ -55,7 +55,7 @@ export default function About() {
               <FaUser className="icon" /> My Story
             </h3>
             <p>
-              I began my front-end development journey in 2024 with a strong
+              I began my front-end development journey in 2023 with a strong
               passion for creating user-friendly and visually appealing web
               interfaces. To solidify my foundation, I enrolled in a
               comprehensive course offered by <b>Board Infinity on Coursera</b>,

@@ -1,9 +1,9 @@
 import React from "react";
 import profileImage from "./profileImage.png";
 import {
-  FaGithub,
   FaLinkedin,
   FaInstagram,
+  FaTiktok,
   FaHome,
   FaUser,
   FaProjectDiagram,
@@ -80,12 +80,12 @@ export default function Navbar({ darkMode, setDarkMode }) {
         {/* Social Media Icons */}
         <div className="social-icons">
           <a
-            href="https://github.com/mZeeshan-IQBAL"
+            href="https://www.tiktok.com/@itx_z33shan"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <FaGithub />
+            <FaTiktok/>
           </a>
           <a
             href="https://www.linkedin.com/in/muhammad-zeeshan-iqbal-0a7744349"
