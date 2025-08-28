@@ -7,6 +7,7 @@ import {
   FaMugHot,
   FaHeart,
   FaLightbulb,
+  FaCertificate,
 } from "react-icons/fa";
 
 const whatILoveItems = [
@@ -45,6 +46,7 @@ const whatILoveItems = [
 export default function About() {
   return (
     <>
+      {/* About Me Section */}
       <section id="about" className="about-section">
         <h1 className="about-me">About Me</h1>
         <p className="about-subline">Get to know me better</p>
@@ -59,12 +61,13 @@ export default function About() {
               I began my front-end development journey in 2023 with a strong
               passion for creating user-friendly and visually appealing web
               interfaces. To solidify my foundation, I enrolled in a
-              comprehensive course offered by <b>Board Infinity on Coursera</b>,
-              where I mastered HTML, CSS, JavaScript, and React.js. Through
-              hands-on projects, I gained a deep understanding of responsive
-              design, component-based architecture, and modern UI/UX principles.
-              This learning experience laid the groundwork for my freelance work
-              and personal projects that followed.
+              comprehensive course offered by{" "}
+              <b>Board Infinity on Coursera</b>, where I mastered HTML, CSS,
+              JavaScript, and React.js. Through hands-on projects, I gained a
+              deep understanding of responsive design, component-based
+              architecture, and modern UI/UX principles. This learning
+              experience laid the groundwork for my freelance work and personal
+              projects that followed.
             </p>
           </div>
 
@@ -85,45 +88,74 @@ export default function About() {
             </ul>
           </div>
 
+          {/* Certificates */}
           <div className="certificates">
             <h3>
               <FaCertificate className="icon" /> Certificates
             </h3>
             <ul className="certificates-list">
+              {/* Certificate 1 */}
               <li>
                 <a
                   href="https://coursera.org/share/807fcca8040c6c26bf8eac87d9b8990d"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="certificate-link"
+                  title="View Certificate: Web Development Mastery – HTML, CSS & JavaScript Fundamentals"
                 >
                   Web Development Mastery: HTML, CSS & JavaScript Fundamentals
                 </a>
+                <div className="certificate-meta">
+                  <span>Completed: August 5, 2025</span>
+                  <span>
+                    Skills: HTML5, CSS, Responsive Design, Bootstrap, React, JavaScript
+                  </span>
+                </div>
               </li>
+
+              {/* Certificate 2 */}
               <li>
                 <a
                   href="https://coursera.org/share/a05a77f6760f03a5c5d1ec61908575a6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="certificate-link"
+                  title="View Certificate: Frontend Development using React"
                 >
                   Frontend Development using React
                 </a>
+                <div className="certificate-meta">
+                  <span>Completed: August 5, 2025</span>
+                  <span>
+                    Skills: React.js, HTML/CSS, UI, Front-End Development, JavaScript
+                  </span>
+                </div>
               </li>
+
+              {/* Certificate 3 */}
               <li>
                 <a
                   href="https://coursera.org/share/872f7a1720a5a19215ddd7cf298a59d6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="certificate-link"
+                  title="View Certificate: Backend Development – Node.js, Express, MongoDB & REST APIs"
                 >
                   Backend Development: Node.js, Express, MongoDB & REST APIs
                 </a>
+                <div className="certificate-meta">
+                  <span>Completed: August 5, 2025</span>
+                  <span>
+                    Skills: Node.js, Express, MongoDB, REST APIs, Authentication, NoSQL
+                  </span>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </section>
+
+      {/* What I Love Section */}
       <section className="what-i-love-section">
         <h2 className="love-section-title">What I Love</h2>
         <div className="love-items-grid">
@@ -136,6 +168,8 @@ export default function About() {
           ))}
         </div>
       </section>
+
+      {/* Quick Facts Section */}
       <section className="facts-section">
         <div className="quick-facts">
           <h2>Quick Facts</h2>
