@@ -50,6 +50,7 @@ export default function About() {
         <p className="about-subline">Get to know me better</p>
 
         <div className="about-content">
+          {/* My Story */}
           <div className="my-story">
             <h3 className="about-title">
               <FaUser className="icon" /> My Story
@@ -67,6 +68,7 @@ export default function About() {
             </p>
           </div>
 
+          {/* Skills */}
           <div className="skills-paragraph">
             <h3>
               <FaLaptopCode className="icon" /> Skills
@@ -82,9 +84,46 @@ export default function About() {
               <li>State Management (Context API, Redux - Optional)</li>
             </ul>
           </div>
+
+          <div className="certificates">
+            <h3>
+              <FaCertificate className="icon" /> Certificates
+            </h3>
+            <ul className="certificates-list">
+              <li>
+                <a
+                  href="https://coursera.org/share/807fcca8040c6c26bf8eac87d9b8990d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="certificate-link"
+                >
+                  Web Development Mastery: HTML, CSS & JavaScript Fundamentals
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://coursera.org/share/a05a77f6760f03a5c5d1ec61908575a6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="certificate-link"
+                >
+                  Frontend Development using React
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://coursera.org/share/872f7a1720a5a19215ddd7cf298a59d6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="certificate-link"
+                >
+                  Backend Development: Node.js, Express, MongoDB & REST APIs
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-
       <section className="what-i-love-section">
         <h2 className="love-section-title">What I Love</h2>
         <div className="love-items-grid">
