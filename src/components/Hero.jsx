@@ -7,7 +7,7 @@ export default function Hero() {
 
   const [typedRole, setTypedRole] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
-  const roles = ["Front-End Developer", "UI/UX Designer", "React Specialist", "Web Developer"];
+  const roles = [ "Full-Stack Developer", "UI/UX Designer", "React Specialist", "MERN-Stack Developer"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
   // ⌨️ Typing effect for name
