@@ -5,8 +5,7 @@ import EcommerceImage from "../assets/Ecommerce-product-page.png";
 import ShopMeImage from "../assets/shopme-preview.png";
 import PortfolioImage from "../assets/portfolio.png";
 import BlogSphereImage from "../assets/BlogSphereWithAI.png";
-// import TravelPlannerImage from "../assets/travel-planner-preview.png"; // You'll need to add this image
-const TravelPlannerImage = "https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Travel+Planner+AI"; // Temporary placeholder
+ import WanderLogImage from "../assets/WanderLogImage.png";
 import "./Projects.css";
 
 // Technology icons mapping
@@ -60,7 +59,41 @@ const projectsData = {
   "MERN Stack Projects": [
     {
       id: 1,
-      title: "AI-Powered Travel Planner",
+      title: "ShopMe E-Commerce",
+      subtitle: "Complete Fashion E-Commerce Solution",
+      description: "A full-featured e-commerce platform with modern UI, secure payment processing, inventory management, and comprehensive admin dashboard. Deployed on multiple cloud platforms.",
+      category: "MERN (frontend & backend)",
+      status: "Live & Deployed",
+      primaryTech: "MERN Stack",
+      technologies: [
+        "React.js", "Node.js", "Express.js", "MongoDB Atlas", "TailwindCSS",
+        "JWT", "Cloudinary", "Nodemailer", "Vercel", "Railway"
+      ],
+      features: [
+        "🛒 Complete Shopping Cart & Checkout System",
+        "👤 User Authentication & Profile Management",
+        "🎛️ Advanced Admin Dashboard & Analytics",
+        "💳 Secure Payment Integration",
+        "📦 Order Management & Tracking",
+        "📧 Email Notifications & Confirmations",
+        "🖼️ Image Upload & Management",
+        "📱 Mobile-First Responsive Design"
+      ],
+      highlights: [
+        "Full E-Commerce Functionality",
+        "Admin Panel with Analytics",
+        "Cloud Integration",
+        "Payment Processing"
+      ],
+      image: ShopMeImage,
+      liveDemo: "https://shopme-frontend-zeta.vercel.app/",
+      github: "https://github.com/mZeeshan-IQBAL/shopme",
+      complexity: "Advanced",
+      duration: "2 Weeks"
+    },
+    {
+      id: 2,
+      title: "WanderLog",
       subtitle: "Intelligent Trip Planning & Collaboration Platform",
       description: "A comprehensive full-stack travel planning application featuring AI-powered itinerary generation, real-time collaboration, interactive maps, and extensive travel data integration. Built with modern technologies for optimal user experience and scalability.",
       category: "MERN (Full-Stack)",
@@ -94,46 +127,12 @@ const projectsData = {
         "Interactive Map Integration",
         "Multi-API Travel Data"
       ],
-      image: TravelPlannerImage,
+      image: WanderLogImage,
       liveDemo: "https://travel-planner-client-iota.vercel.app/",
       github: "https://github.com/mZeeshan-IQBAL/TravelPlanner-Client",
       serverDemo: "https://travel-planner-server-woad.vercel.app/",
       complexity: "Advanced",
       duration: "4 Weeks"
-    },
-    {
-      id: 2,
-      title: "ShopMe E-Commerce",
-      subtitle: "Complete Fashion E-Commerce Solution",
-      description: "A full-featured e-commerce platform with modern UI, secure payment processing, inventory management, and comprehensive admin dashboard. Deployed on multiple cloud platforms.",
-      category: "MERN (frontend & backend)",
-      status: "Live & Deployed",
-      primaryTech: "MERN Stack",
-      technologies: [
-        "React.js", "Node.js", "Express.js", "MongoDB Atlas", "TailwindCSS",
-        "JWT", "Cloudinary", "Nodemailer", "Vercel", "Railway"
-      ],
-      features: [
-        "🛒 Complete Shopping Cart & Checkout System",
-        "👤 User Authentication & Profile Management",
-        "🎛️ Advanced Admin Dashboard & Analytics",
-        "💳 Secure Payment Integration",
-        "📦 Order Management & Tracking",
-        "📧 Email Notifications & Confirmations",
-        "🖼️ Image Upload & Management",
-        "📱 Mobile-First Responsive Design"
-      ],
-      highlights: [
-        "Full E-Commerce Functionality",
-        "Admin Panel with Analytics",
-        "Cloud Integration",
-        "Payment Processing"
-      ],
-      image: ShopMeImage,
-      liveDemo: "https://shopme-frontend-zeta.vercel.app/",
-      github: "https://github.com/mZeeshan-IQBAL/shopme",
-      complexity: "Advanced",
-      duration: "2 Weeks"
     }
   ],
   "React.js Projects": [
