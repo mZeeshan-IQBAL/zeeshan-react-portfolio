@@ -5,6 +5,8 @@ import EcommerceImage from "../assets/Ecommerce-product-page.png";
 import ShopMeImage from "../assets/shopme-preview.png";
 import PortfolioImage from "../assets/portfolio.png";
 import BlogSphereImage from "../assets/BlogSphereWithAI.png";
+// import TravelPlannerImage from "../assets/travel-planner-preview.png"; // You'll need to add this image
+const TravelPlannerImage = "https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Travel+Planner+AI"; // Temporary placeholder
 import "./Projects.css";
 
 // Technology icons mapping
@@ -21,7 +23,7 @@ const techIcons = {
 const projectsData = {
   "Next.js Projects": [
     {
-      id: 1,
+      id: 5,
       title: "BlogSphere With AI",
       subtitle: "Advanced AI-Powered Storytelling Platform",
       description: "A comprehensive full-stack blogging platform featuring AI writing assistance, real-time engagement, and advanced analytics. Built with cutting-edge technologies for optimal performance and user experience.",
@@ -56,6 +58,49 @@ const projectsData = {
     }
   ],
   "MERN Stack Projects": [
+    {
+      id: 1,
+      title: "AI-Powered Travel Planner",
+      subtitle: "Intelligent Trip Planning & Collaboration Platform",
+      description: "A comprehensive full-stack travel planning application featuring AI-powered itinerary generation, real-time collaboration, interactive maps, and extensive travel data integration. Built with modern technologies for optimal user experience and scalability.",
+      category: "MERN (Full-Stack)",
+      status: "Live & Deployed",
+      primaryTech: "MERN Stack",
+      technologies: [
+        "React.js", "Node.js", "Express.js", "MongoDB", "Socket.IO",
+        "TailwindCSS", "OpenRouter AI", "JWT", "Cloudinary", "Axios",
+        "React Leaflet", "Recharts", "OpenWeather API", "Amadeus API",
+        "Unsplash API", "React Router", "Helmet", "Multer", "PDFKit"
+      ],
+      features: [
+        "🤖 AI-Powered Itinerary Generation with Claude 3.5",
+        "🗺️ Interactive Maps with Real-time Location Services",
+        "⚡ Real-time Collaboration with Socket.IO",
+        "🔐 Multi-Provider Authentication (JWT, Google, Facebook)",
+        "🌤️ Live Weather Integration & Forecasts",
+        "📸 Image Upload & Management with Cloudinary",
+        "📊 Advanced Trip Analytics & Visualizations",
+        "💰 Budget Tracking & Expense Management",
+        "📱 Fully Responsive Mobile-First Design",
+        "🔍 Smart Search with AI-Enhanced Suggestions",
+        "📄 PDF Export & Trip Documentation",
+        "🏨 Hotel & Flight Data Integration",
+        "👥 Trip Sharing & Collaborative Planning",
+        "📧 Email Notifications & Confirmations"
+      ],
+      highlights: [
+        "AI-Enhanced Trip Planning",
+        "Real-time Collaboration",
+        "Interactive Map Integration",
+        "Multi-API Travel Data"
+      ],
+      image: TravelPlannerImage,
+      liveDemo: "https://travel-planner-client-iota.vercel.app/",
+      github: "https://github.com/mZeeshan-IQBAL/TravelPlanner-Client",
+      serverDemo: "https://travel-planner-server-woad.vercel.app/",
+      complexity: "Advanced",
+      duration: "4 Weeks"
+    },
     {
       id: 2,
       title: "ShopMe E-Commerce",
