@@ -1,0 +1,238 @@
+/* Font Size Overrides - Reduce all text sizes except sidebar navbar */
+
+/* Global font size reduction */
+html {
+  font-size: 14px; /* Reduced from default 16px */
+}
+
+/* Main content area font size reduction (excluding sidebar) */
+.main-content {
+  font-size: 0.85rem;
+}
+
+/* Headers and headings size reduction */
+h1 { font-size: 1.8rem !important; }
+h2 { font-size: 1.5rem !important; }
+h3 { font-size: 1.2rem !important; }
+h4 { font-size: 1rem !important; }
+h5 { font-size: 0.9rem !important; }
+h6 { font-size: 0.8rem !important; }
+
+/* Paragraph and body text */
+p, .text-body, .section-text {
+  font-size: 0.8rem !important;
+  line-height: 1.5;
+}
+
+/* Button font sizes */
+button, .btn, .btn-primary, .btn-secondary {
+  font-size: 0.75rem !important;
+}
+
+/* Form elements */
+input, textarea, select {
+  font-size: 0.8rem !important;
+}
+
+/* Cards and content blocks */
+.card, .card-body {
+  font-size: 0.8rem;
+}
+
+/* Service section overrides */
+.service-title {
+  font-size: 1rem !important;
+}
+
+.service-description {
+  font-size: 0.8rem !important;
+}
+
+.technology-item {
+  font-size: 0.7rem !important;
+}
+
+/* Experience section overrides */
+.experience-section h2 {
+  font-size: 1.2rem !important;
+}
+
+.experience-section h3 {
+  font-size: 1rem !important;
+}
+
+.experience-section p {
+  font-size: 0.8rem !important;
+}
+
+.experience-section li {
+  font-size: 0.8rem !important;
+}
+
+/* Certificate section overrides */
+.certificate-btn {
+  font-size: 0.8rem !important;
+}
+
+.tech {
+  font-size: 0.7rem !important;
+}
+
+/* Contact section overrides */
+.contact-heading {
+  font-size: 1.6rem !important;
+}
+
+.contact-description {
+  font-size: 0.9rem !important;
+}
+
+.socials h2, .messages-section h2 {
+  font-size: 1.5rem !important;
+}
+
+.socials-description, .messages-description {
+  font-size: 0.85rem !important;
+}
+
+.contact-info strong {
+  font-size: 0.95rem !important;
+}
+
+.contact-info p {
+  font-size: 0.8rem !important;
+}
+
+.contact-info a {
+  font-size: 0.8rem !important;
+}
+
+/* Quick facts section */
+.quick-facts h3 {
+  font-size: 1.5rem !important;
+}
+
+.fact-number {
+  font-size: 1.6rem !important;
+}
+
+.fact-label {
+  font-size: 0.85rem !important;
+}
+
+/* Process section */
+.process-heading {
+  font-size: 1.6rem !important;
+}
+
+.process-step-title {
+  font-size: 1.1rem !important;
+}
+
+.process-description {
+  font-size: 0.8rem !important;
+}
+
+/* What I Love section */
+.love-section-title {
+  font-size: 1.6rem !important;
+}
+
+.love-title {
+  font-size: 0.95rem !important;
+}
+
+/* Footer section */
+.footer p {
+  font-size: 0.85rem !important;
+}
+
+.footer-links a {
+  font-size: 0.8rem !important;
+}
+
+/* Projects specific overrides */
+.primary-tech-name {
+  font-size: 0.95rem !important;
+}
+
+.tech-tag {
+  font-size: 0.75rem !important;
+}
+
+.project-highlights h4 {
+  font-size: 0.95rem !important;
+}
+
+.highlight-tag {
+  font-size: 0.7rem !important;
+}
+
+.feature-item {
+  font-size: 0.8rem !important;
+}
+
+.features-toggle {
+  font-size: 0.85rem !important;
+}
+
+.project-duration {
+  font-size: 0.8rem !important;
+}
+
+.project-category {
+  font-size: 0.75rem !important;
+}
+
+/* Demo and GitHub links */
+.demo-link, .github-link {
+  font-size: 0.8rem !important;
+}
+
+/* Status and complexity badges */
+.status-badge, .complexity-badge {
+  font-size: 0.65rem !important;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  
+  h1 { font-size: 1.6rem !important; }
+  h2 { font-size: 1.3rem !important; }
+  h3 { font-size: 1.1rem !important; }
+  
+  .main-content {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+  
+  h1 { font-size: 1.4rem !important; }
+  h2 { font-size: 1.2rem !important; }
+  h3 { font-size: 1rem !important; }
+  
+  .main-content {
+    font-size: 0.75rem;
+  }
+}
+
+/* Preserve sidebar font sizes - DO NOT CHANGE */
+.sidebar,
+.sidebar *,
+.sidebar-navbar,
+.sidebar-navbar *,
+.nav-item,
+.nav-item *,
+.profile-name,
+.profile-subtitle,
+.social-icon,
+.dark-mode-toggle {
+  font-size: inherit !important;
+}
