@@ -25,6 +25,7 @@ body {
   width: calc(100% - 280px);
   padding: 1rem;
   overflow-x: hidden;
+  border: none;
 }
 .dark .main-content {
   background: #0a0e1a;
@@ -91,7 +92,6 @@ body {
   left: 0;
   color: #f0f0f0;
   background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
-  border-right: 2px solid rgba(99, 102, 241, 0.2);
   overflow-y: auto;
   z-index: 1000;
   box-shadow: 8px 0 32px rgba(0, 0, 0, 0.12);
@@ -243,7 +243,6 @@ body {
     rgba(139, 92, 246, 0.95) 50%,
     rgba(236, 72, 153, 0.95) 100%
   );
-  border-right: 2px solid rgba(79, 70, 229, 0.3);
 }
 
 .dark .about-me {

@@ -34,7 +34,7 @@ const experiences = [
   {
     id: 2,
     role: "Started My Coding Journey",
-    date: "2023 – Present",
+    date: "2024 – Present",
     organization: { name: "Comsats University Islamabad", link: null },
     location: "Comsats University Islamabad",
     description:
@@ -51,7 +51,7 @@ const experiences = [
   {
     id: 3,
     role: "Senior Frontend Web Developer",
-    date: "2023",
+    date: "2025",
     organization: {
       name: "utecho",
       link: "https://www.utecho.com",
