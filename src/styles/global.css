@@ -84,7 +84,7 @@ body {
   color: white;
   justify-content: space-between;
 }
-.sidebar {
+ .sidebar {
   width: 280px;
   height: 100vh;
   position: fixed;
@@ -94,8 +94,17 @@ body {
   background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
   overflow-y: auto;
   z-index: 1000;
-  box-shadow: 8px 0 32px rgba(0, 0, 0, 0.12);
+  /* Removed outer shadow to eliminate the visible seam between sidebar and content */
+  box-shadow: none;
   backdrop-filter: blur(10px);
+  /* Hide the internal scrollbar/gutter that can appear as a thin line on some platforms */
+  -ms-overflow-style: none; /* IE and legacy Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+/* Hide scrollbar for WebKit-based browsers */
+.sidebar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 /* Navigation Menu */
