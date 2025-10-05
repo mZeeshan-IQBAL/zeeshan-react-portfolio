@@ -58,7 +58,7 @@ const experiences = [
     },
     location: "Mtn, Punjab, Pakistan",
     description:
-      "Worked as a Senior Frontend Developer at The ACE Solutions, where I focused on enhancing my frontend skills through real-world practice and internal collaboration. My role involved exploring modern UI techniques, improving code quality, and contributing to internal features and components.",
+      "Worked as a Senior Frontend Developer at Utecho, where I focused on enhancing my frontend skills through real-world practice and internal collaboration. My role involved exploring modern UI techniques, improving code quality, and contributing to internal features and components.",
     achievements: [
       "Refactored several reusable UI components",
       "Improved business performance through modernized interfaces",
