@@ -89,19 +89,7 @@ export default function Hero() {
             View My Work
            <span>  →</span>
           </button>
-          <button
-            onClick={() => {
-              const link = document.createElement("a");
-              link.href = "/resume.pdf";
-              link.download = "Muhammad_Zeeshan_Iqbal_Resume.pdf";
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }}
-            className="resume-btn"
-          >
-            <span>📩</span> Download Resume
-          </button>
+        
         </div>
       </div>
     </section>
