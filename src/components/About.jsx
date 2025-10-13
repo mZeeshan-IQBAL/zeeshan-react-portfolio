@@ -8,7 +8,14 @@ import {
   FaMugHot,
   FaHeart,
   FaLightbulb,
+  FaDatabase,
+  FaLock,
+  FaCreditCard,
+  FaGlobe,
+  FaMapMarkedAlt,
+  FaShieldAlt,
 } from "react-icons/fa";
+
 
 const whatILoveItems = [
   {
@@ -58,38 +65,39 @@ export default function About() {
               <FaUser className="icon" /> My Story
             </h3>
             <p>
-              I began my front-end development journey in 2023 with a strong
-              passion for creating user-friendly and visually appealing web
-              interfaces. To solidify my foundation, I enrolled in a
-              comprehensive course offered by{" "}
-              <b>Board Infinity on Coursera</b>, where I mastered HTML, CSS,
-              JavaScript, and React.js. Through hands-on projects, I gained a
-              deep understanding of responsive design, component-based
-              architecture, and modern UI/UX principles. This learning
-              experience laid the groundwork for my freelance work and personal
-              projects that followed.
+              I am a passionate MERN‑Stack developer with experience in MongoDB, Express.js, React.js, and Node.js. I specialize in developing dynamic and static web applications using modern technologies and frameworks. With experience across front‑end, back‑end, database management, and API integrations, I build applications that are scalable, responsive, and user‑friendly. I’ve worked on projects from small‑scale to large‑scale and understand the full software development life cycle.
             </p>
           </div>
 
           {/* Skills */}
           <div className="skills-paragraph">
-            <h3>
+            <h3 className="about-title">
               <FaLaptopCode className="icon" /> Skills
             </h3>
+            {/** Structured skills list with icons */}
             <ul className="skills-list">
-              <li>React.js (Class & Functional Components)</li>
-              <li>JavaScript (ES6+)</li>
-              <li>Cascading Style Sheets (CSS)</li>
-              <li>User Interface (UI)</li>
-              <li>Programming Principles</li>
-              <li>Front-End Web Development</li>
-              <li>HTML5</li>
-              <li>State Management (Context API, Redux - Optional)</li>
+              {[
+                { icon: <FaCode />, label: "Languages", detail: "HTML5, CSS3, JavaScript" },
+                { icon: <FaLaptopCode />, label: "Frameworks", detail: "React, Next.js, Node.js, Express, Redux" },
+                { icon: <FaDatabase />, label: "Databases", detail: "MongoDB" },
+                { icon: <FaLock />, label: "Authentication", detail: "JWT, NextAuth" },
+                { icon: <FaCreditCard />, label: "Payments", detail: "Stripe, PayPal, Razorpay" },
+                { icon: <FaGlobe />, label: "Social integrations", detail: "Google, Facebook, Twitter" },
+                { icon: <FaMapMarkedAlt />, label: "Maps", detail: "Google Maps" },
+                { icon: <FaShieldAlt />, label: "Security", detail: "CSP headers" },
+              ].map((s, i) => (
+                <li key={i} className="skill-row">
+                  <span className="skill-icon">{s.icon}</span>
+                  <span className="skill-label">{s.label}:</span>
+                  <span className="skill-detail">{s.detail}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
-      </section> {/* ✅ Closed the About section */}
-<Certificates/>
+      </section>
+      {/* ✅ Closed the About section */}
+      <Certificates />
       {/* What I Love Section */}
       <section className="what-i-love-section">
         <h2 className="love-section-title">What I Love</h2>
@@ -103,7 +111,6 @@ export default function About() {
           ))}
         </div>
       </section>
-
       {/* Quick Facts Section */}
       <section className="facts-section">
         <div className="quick-facts">
@@ -130,5 +137,4 @@ export default function About() {
       </section>
     </>
   );
-
 }

@@ -7,7 +7,12 @@ export default function Hero() {
 
   const [typedRole, setTypedRole] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
-  const roles = [ "Full-Stack Developer", "UI/UX Designer", "React Specialist", "MERN-Stack Developer"];
+  const roles = [
+    "Full-Stack Developer",
+    "UI/UX Designer",
+    "React Specialist",
+    "MERN-Stack Developer",
+  ];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
   // ⌨️ Typing effect for name
@@ -47,7 +52,7 @@ export default function Hero() {
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
-        block: "start"
+        block: "start",
       });
     }
   };
@@ -56,7 +61,7 @@ export default function Hero() {
     <section id="hero" className="hero">
       <div className="hero-content">
         <div className="hero-text">
-          <h1 className="hero-greeting">Hi, I'm</h1>
+          <p className="hero-greeting">Hi, I'm</p>
 
           {/* Typing Name */}
           <h1 id="hero-name" className="hero-name typing">
@@ -65,31 +70,28 @@ export default function Hero() {
 
           {/* Typing Role */}
           {nameIndex === fullName.length && (
-            <h3 className="hero-role">
+            <p className="hero-role" aria-live="polite">
               <span className="typing-text">{typedRole}</span>
               <span className="cursor">|</span>
-            </h3>
+            </p>
           )}
 
           <p className="hero-description">
-            Crafting digital experiences with modern technologies and
-            innovative solutions. I design and animate user interfaces that
-            are not only visually appealing but also user-friendly with
-            advanced 3D animations and interactive elements. I specialize in
-            creating responsive and accessible web applications that provide a
-            seamless user experience across all devices.
+            Crafting dynamic, secure, and user-centric digital experiences using
+            modern full-stack technologies. I build fast, responsive, and
+            visually engaging web applications powered by the MERN stack,
+            integrating advanced animations, real-time interactivity, and
+            seamless backend connectivity. My focus is on delivering scalable,
+            accessible, and high-performance solutions that blend creative
+            design with cutting-edge development.
           </p>
         </div>
 
         <div className="hero-buttons">
-          <button
-            onClick={() => smoothScroll("projects")}
-            className="work-btn"
-          >
+          <button onClick={() => smoothScroll("projects")} className="work-btn">
             View My Work
-           <span>  →</span>
+            <span> →</span>
           </button>
-        
         </div>
       </div>
     </section>
